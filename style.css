@@ -1,0 +1,845 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Faster+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Elsie&family=Faster+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Aclonica", sans-serif;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.button {
+  padding: 1rem;
+  color: #fff;
+  background-color: #b56c0d;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background: #000;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+header {
+  background: #000;
+  position: relative;
+}
+
+header .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  padding: 0.7rem;
+}
+
+header .top li a {
+  padding-left: 0.9rem;
+}
+
+header .top li a:hover {
+  opacity: 0.7;
+}
+
+header .down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+header .down .log {
+  color: #fff;
+  font-size: 3rem;
+  width: 20%;
+  font-family: "Faster One", cursive;
+}
+
+header .down .down-mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ccc;
+  width: 60%;
+}
+
+header .down .down-mid div .underline:hover {
+  border-bottom: 3px solid #ccc;
+  color: burlywood;
+}
+
+header .down .down-mid .top:hover {
+  color: burlywood;
+  cursor: pointer;
+}
+
+header .down .down-mid li:hover {
+  color: burlywood;
+  cursor: pointer;
+}
+
+header .down .bar {
+  width: 40px;
+  display: none;
+}
+
+header .down .bar div {
+  border-top: 2px solid #ccc;
+  width: 70%;
+  padding: 3px;
+  cursor: pointer;
+}
+
+header .down .bar div:hover {
+  opacity: 0.7;
+  width: 100%;
+}
+
+header .down .search input {
+  background-color: #b56c0d;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+header .down .search input:hover {
+  background-color: #000;
+  border: 2px solid burlywood;
+}
+
+header .down .search input:focus {
+  outline: 0;
+}
+
+header .down .drop-down1 {
+  position: absolute;
+  top: 13vh;
+  left: 20rem;
+  background: #000;
+  display: none;
+}
+
+header .down .drop-down2 {
+  position: absolute;
+  background: #000;
+  display: none;
+}
+
+header .down .li {
+  padding: 0.7rem;
+  border-bottom: 1px solid #333;
+}
+
+header .down .li .dropdown {
+  font-size: 0.8rem;
+}
+
+header .down .li:hover {
+  background: #764c15;
+}
+
+header .down .one:hover .drop-down1 {
+  display: block;
+}
+
+header .down .two:hover .drop-down2 {
+  display: block;
+}
+
+main .image {
+  background-image: url("nuts.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 532px;
+  font-family: sans-serif;
+  color: #fff;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+main .image h2 {
+  font-size: 5rem;
+}
+
+main .image h3 {
+  font-size: 3rem;
+  padding: 0.8rem;
+}
+
+main .image .logo {
+  font-family: "Faster One", cursive;
+}
+
+main .treatment {
+  text-align: center;
+  margin: 2rem;
+  color: #000;
+}
+
+main .treatment h2 {
+  font-size: 2rem;
+}
+
+main .treatment p {
+  margin-top: 1rem;
+  padding: 0 2.5rem;
+  font-family: sans-serif;
+}
+
+main .projects {
+  margin: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .projects .type1,
+main .projects .type2,
+main .projects .type3,
+main .projects .type4,
+main .projects .type5,
+main .projects .type6,
+main .projects .type7,
+main .projects .type8 {
+  background-image: url("./first-visit.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  padding: 5rem 0;
+  cursor: pointer;
+  margin: 1rem;
+  color: #fff;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+main .projects .type1 h2,
+main .projects .type2 h2,
+main .projects .type3 h2,
+main .projects .type4 h2,
+main .projects .type5 h2,
+main .projects .type6 h2,
+main .projects .type7 h2,
+main .projects .type8 h2 {
+  margin-bottom: 4rem;
+}
+
+main .projects .type1:hover,
+main .projects .type2:hover,
+main .projects .type3:hover,
+main .projects .type4:hover,
+main .projects .type5:hover,
+main .projects .type6:hover,
+main .projects .type7:hover,
+main .projects .type8:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main .projects .type2 {
+  background-image: url("./massage.jpg");
+}
+
+main .projects .type3 {
+  background-image: url("./men.jpg");
+}
+
+main .projects .type4 {
+  background-image: url("./skincare.jpg");
+}
+
+main .projects .type5 {
+  background-image: url("./bodytreatment.jpg");
+}
+
+main .projects .type6 {
+  background-image: url("./beauty.jpg");
+}
+
+main .projects .type7 {
+  background-image: url("./experience.jpg");
+}
+
+main .projects .type8 {
+  background-image: url("./spalebrations.jpg");
+}
+
+main .relax,
+main .recenter,
+main .renew {
+  background: #f0e7e7;
+  padding: 7rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .relax img,
+main .recenter img,
+main .renew img {
+  width: 700px;
+  height: 400px;
+  border-radius: 5px;
+}
+
+main .relax .right,
+main .recenter .right,
+main .renew .right {
+  padding-left: 2rem;
+}
+
+main .relax .right h2,
+main .recenter .right h2,
+main .renew .right h2 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+main .relax .right h4,
+main .recenter .right h4,
+main .renew .right h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+main .relax .right p,
+main .recenter .right p,
+main .renew .right p {
+  font-family: sans-serif;
+  padding-bottom: 2.5rem;
+}
+
+main .recenter {
+  background: none;
+}
+
+main .circle {
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .circle .stones img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 2rem;
+}
+
+main .circle .stones .note h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main .circle .stones .note p {
+  margin-bottom: 3rem;
+}
+
+main .feedback {
+  text-align: center;
+  margin: 7rem;
+  height: 90px;
+}
+
+main .feedback h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+main .feedback .comments {
+  max-width: 1000px;
+  margin: auto;
+}
+
+main .feedback .comments .mySlides {
+  display: none;
+}
+
+main .feedback .comments .mySlides p {
+  vertical-align: middle;
+}
+
+main .feedback .dot {
+  height: 5px;
+  width: 5px;
+  margin: 30px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #000;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gifthead {
+  margin: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  margin-left: 15px;
+}
+
+.giftstone {
+  width: 100%;
+}
+
+.pic {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.giftpic {
+  border: 1px solid gray;
+}
+
+.career h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 4rem;
+}
+
+.career .joinbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.career .joinbtn a:first-child {
+  margin-right: 1rem;
+}
+
+.contak {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0 0 0;
+}
+
+.contak div {
+  padding: 0.5rem;
+}
+
+.contak span {
+  color: burlywood;
+}
+
+footer {
+  padding: 3rem;
+  font-family: "Elsie", cursive;
+  background: #000;
+  color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .logo {
+  font-family: "Faster One", cursive;
+  color: #fff;
+  font-size: 2rem;
+}
+
+footer .foot-left2 .move {
+  margin-top: 2rem;
+}
+
+footer .foot-left2 .policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .foot-left2 .policy h3:first-child {
+  padding-right: 0.5rem;
+}
+
+footer .foot-left2 .policy h3:hover {
+  text-decoration: underline;
+}
+
+footer .foot-right h3 {
+  padding: 0.8rem 0;
+  font-size: 0.9rem;
+}
+
+footer .foot-right i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+footer .foot-right i:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1125px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    position: relative;
+  }
+  header .down-mid {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  header .down-mid .one p,
+  header .down-mid .two div,
+  header .down-mid div .underline {
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+  }
+  header .down-mid .one:hover .drop-down1,
+  header .down-mid .two:hover .drop-down2 {
+    display: none;
+  }
+  header .down .bar {
+    display: block;
+  }
+  header .search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    position: relative;
+  }
+  header .down-mid {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  header .down-mid .one p,
+  header .down-mid .two div,
+  header .down-mid div .underline {
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+  }
+  header .down-mid .one:hover .drop-down1,
+  header .down-mid .two:hover .drop-down2 {
+    display: none;
+  }
+  header .down .bar {
+    display: block;
+  }
+  header .search {
+    display: none;
+  }
+  main .image {
+    height: 350px;
+    padding-top: 3rem;
+  }
+  main .image h2 {
+    font-size: 2.2rem;
+  }
+  main .image h3 {
+    font-size: 1.7rem;
+  }
+  main .image .logo h2 {
+    font-size: 3rem;
+    color: #5c8830;
+  }
+  main .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .projects .type1,
+  main .projects .type2,
+  main .projects .type3,
+  main .projects .type4,
+  main .projects .type5,
+  main .projects .type6,
+  main .projects .type7,
+  main .projects .type8 {
+    width: 400px;
+  }
+  main .relax,
+  main .recenter,
+  main .renew {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .relax img,
+  main .recenter img,
+  main .renew img {
+    width: 390px;
+    border-radius: 0;
+  }
+  main .relax .right h2,
+  main .recenter .right h2,
+  main .renew .right h2 {
+    padding-top: 1rem;
+  }
+  main .ma {
+    margin-top: 4rem;
+  }
+  main .circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .feedback {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  main .feedback h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .contak {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .con {
+    margin-top: 1rem;
+  }
+  .pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .joinbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .joinbtn a {
+    margin: 1rem 0;
+  }
+  footer {
+    margin-top: 20rem;
+  }
+  footer .policy {
+    margin-top: 0.5rem;
+  }
+}
+
+.down-mid-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes liFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes liFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .up {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .mid {
+  opacity: 0;
+}
+
+.toggle .down {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+/*# sourceMappingURL=style.css.map */
